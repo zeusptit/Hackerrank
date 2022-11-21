@@ -6,19 +6,17 @@ using namespace std;
 using ll = long long;
 int mod = 1000000007;
 
-bool check(ll n)
-{
-    int temp = (int)sqrt(n);
-    return 1ll * temp * temp == n;
-}
-
 int main(){
     quick();
-    int a,b,cnt = 0;
+    ll a,b;
     cin >> a >> b;
-    for(int i = a; i <= b; i++)
+    ll cnt = 0;
+    ll m = sqrt(a), n = sqrt(b);
+    for(ll i = m; i <= n; i++)
     {
-        if(check(i))cnt++;
+        ll temp = i * i;
+        if(temp >= a && temp <= b )
+            cnt++;
     }
     cout << cnt;
 }
