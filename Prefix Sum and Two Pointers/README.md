@@ -1,0 +1,1 @@
+Mảng cộng dồn và hai con trỏ
