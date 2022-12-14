@@ -1,1 +1,1 @@
-Cấu trucS
+Cấu trúc
